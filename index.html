@@ -10,18 +10,18 @@
     <header id="header">
         <div id="header-section-one">
             <div id="header-section-one-left">
-                <label for="search-bar"></label>
+                <i id="search-icon-container"><img src="./icons/search.svg" id="search-icon"></i>
                 <input type="search" id="search-bar" name="search-bar">
             </div>
             <div id="header-section-one-right">
-                <div>icon</div>
-                <img alt="profile pic">
+                <i id="bell-icon-container"><img src="./icons/bell.svg" id="bell-icon"></i>
+                <img src="./images/profile.jpg" class="profile-img" id="profile-small" alt="profile pic">
                 <p>Mushroom Lover</p>
             </div>
         </div>
         <div id="header-section-two">
             <div id="welcome-section">
-                <img alt="profile pic"ß>
+                <img src="./images/profile.jpg" class="profile-img" id="profile-big" alt="profile pic">
                 <div id="#welcome-text">
                     <p>Hi there,</p>
                     <p>Mushroom Lover</p>
@@ -35,40 +35,112 @@
         </div>
     </header>
     <div id="sidebar">
-        <h1>Dashboard</h1>
+        <h1><i id="dashboard-icon-container"><img src="./icons/dashboard.svg" id="dashboard-icon"></i>Dashboard</h1>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
-            <li>Item 6</li>
-            <li>Item 7</li>
-            <li>Item 8</li>
-            <li>Item 9</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/home.svg" class="sidebar-icon"></i>Home</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/profile.svg" class="sidebar-icon"></i>Profile</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/messages.svg" class="sidebar-icon"></i>Messages</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/history.svg" class="sidebar-icon"></i>History</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/tasks.svg" class="sidebar-icon"></i>Tasks</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/communities.svg" class="sidebar-icon"></i>Communities</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/settings.svg" class="sidebar-icon"></i>Settings</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/support.svg" class="sidebar-icon"></i>Support</li>
+            <li><i class="sidebar-icon-container"><img src="./icons/privacy.svg" class="sidebar-icon"></i>Privacy</li>
         </ul>
     </div>
     <main id="main">
         <div id="main-projects">
             <h2>Your projects</h2>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+            <div id="main-projects-content">
+                <div>
+                    <figure>
+                        <div><img src="./images/baby-bella.jpg" alt=""></div>
+                        <figcaption>Baby Bella</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <div><img src="./images/enoki.jpg" alt=""></div>
+                        <figcaption>Enoki</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <div><img src="./images/oyster.jpg" alt=""></div>
+                        <figcaption>Oyster</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <div><img src="./images/portobello.jpg" alt=""></div>
+                        <figcaption>Portobello</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <div><img src="./images/shiitake.jpg" alt=""></div>
+                        <figcaption>Shiitake</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <div><img src="./images/variety.jpg" alt=""></div>
+                        <figcaption>Variety</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-        <div id="main-announcements">
-            <h2>Announcements</h2>
-            <div>a1</div>
-            <div>a2</div>
-            <div>a3</div>
-        </div>
-        <div id="main-trending">
-            <h2>trending</h2>
-            <div>t1</div>
-            <div>t2</div>
-            <div>t3</div>
+        <div id="main-side">
+            <div id="main-announcements">
+                <h2>Announcements</h2>
+                <div id="main-announcements-content">
+                    <div>
+                        <h4>Site Maintenance</h4>
+                        <p>Sed velit dignissim sodales ut eu sem integer vitae. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+                    </div>
+                    <div>
+                        <h4>Community Share Day</h4>
+                        <p>Sed velit dignissim sodales ut eu sem integer vitae. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+                    </div>
+                    <div>
+                        <h4>Update Privacy</h4>
+                        <p>Sed velit dignissim sodales ut eu sem integer vitae. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="main-trending">
+                <h2>Trending</h2>
+                <div id="main-trending-content">
+                    <div>
+                        <img src="./images/trending-one.jpg">
+                        <div>
+                            <p>@mushroom_lover2</p>
+                            <p>Mushrooms are delicious!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending-two.jpg">
+                        <div>
+                            <p>@mushroom_lover3</p>
+                            <p>Where can I find mushrooms?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending-three.jpg">
+                        <div>
+                            <p>@mushroom_lover4</p>
+                            <p>Dreaming about... ?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending-four.jpg">
+                        <div>
+                            <p>@mushroom_lover5</p>
+                            <p>Looking for new mushrooms!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer id="footer">
